@@ -37,7 +37,13 @@
   git diff id1..id2 - różnice między rewizjami z hash = id1 i hash = id2
   git diff branch1..branchd2 - różnice między gałęziami
   ```
-  
+
+* init - tworzy nowe repozytorium
+  ```
+  git init nazwa_rep - tworzy katalog nazwa_rep z nowym repozytorium
+  git init - tworzy repozytorium w bieżącym katalogu
+  ```
+ 
 
 * log - pokazuje zmiany w repozytorium
   ```
@@ -50,7 +56,20 @@
   merge source destination - nie jestem pewny, że taka kolejność. Może dlaego, że robiłem merge z konfliktem. Zrobił merga do 
      aktywnej gałęzi którą była source.
   ```
+
+* pull - zaciąga dane z innego repo i robi merge'a
+  ```
+  git pull rem_orig branch
+  ```
   
+* remote - repozytorium zdalne
+  ```
+  remote - wyświetla repozytoria zdalne
+  remote -v - wypisuje dodatkowo url
+  remote add remote-name URL - dodaje rep. zdalne
+  remote rm remote-name - usuwa
+  ```
+
 * reset - przywraca stan sprzed zmian które są już w stage'u (usuwa to co jest w stage) i przywraca daną rewizję
   ```
   git reset HEAD filename
@@ -77,3 +96,7 @@
 ## Ścieżka względna zmian
 * HEAD - najświeższy commit
 * HEAD~n - commit n przed HEAD
+
+## Wątpliwości
+* co się dzieje, jak robię checkout, a w tamtym nie ma tych zmian co zrobiłem? Automatyczny merge? Czy wszystko się zastępuje?
+  W szczególności przypadek, gdy zmiany są niezapisane
