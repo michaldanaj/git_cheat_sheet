@@ -32,6 +32,8 @@
   ```
 
 * diff - pokazuje różnice
+![git diff](https://i.stack.imgur.com/y8gFk.png)
+
   ```
   git diff - różnice między stage(index) a katalogiem roboczym. Jak nie ma pliku w stage, to jak mi się wydaje porównuje z ostatnim commitem. Jeszcze szczegóły do rozkminienia.
   git diff --cached (--staged) - różnice między stage a HEAD
